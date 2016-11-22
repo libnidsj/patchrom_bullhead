@@ -13,7 +13,7 @@ local-phone-priv-apps := Shell FusedLocation ProxyHandler ExternalStorageProvide
 	SharedStorageBackup DMService ConnMO DiagMon DCMO InputDevices CellBroadcastReceiver \
 	BackupRestoreConfirmation 
 
-local-miui-modified-apps := 
+local-miui-modified-apps := InCallUI
 
 local-miui-removed-apps := 
 
@@ -22,7 +22,7 @@ local-target-bit := 64
 
 include $(PORT_BUILD)/porting.mk
 
-local-pre-zip-misc:
+pre-zip-misc:
 	@echo copy files
 	cp -rf extras/system/* $(ZIP_DIR)/system/
 
