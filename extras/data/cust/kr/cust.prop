@@ -1,0 +1,7 @@
+persist.sys.timezone=Asia/Seoul
+ro.product.locale.language=ko
+ro.product.locale.region=KR
+ro.miui.region=KR
+ro.miui.mcc=9450
+ro.miui.mnc=9999
+ro.miui.cust_variant=kr

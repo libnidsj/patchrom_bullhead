@@ -1,0 +1,7 @@
+persist.sys.timezone=Europe/Athens
+ro.product.locale.language=el
+ro.product.locale.region=GR
+ro.miui.region=GR
+ro.miui.mcc=9202
+ro.miui.mnc=9999
+ro.miui.cust_variant=gr

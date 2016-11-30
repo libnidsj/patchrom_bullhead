@@ -1,0 +1,7 @@
+persist.sys.timezone=Indian/Mauritius
+ro.product.locale.language=en
+ro.product.locale.region=MU
+ro.miui.region=MU
+ro.miui.mcc=9617
+ro.miui.mnc=9999
+ro.miui.cust_variant=mu

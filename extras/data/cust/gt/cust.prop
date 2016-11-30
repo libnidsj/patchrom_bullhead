@@ -1,0 +1,7 @@
+persist.sys.timezone=America/Guatemala
+ro.product.locale.language=es
+ro.product.locale.region=GT
+ro.miui.region=GT
+ro.miui.mcc=9704
+ro.miui.mnc=9999
+ro.miui.cust_variant=gt

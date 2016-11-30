@@ -1,0 +1,7 @@
+persist.sys.timezone=Africa/Dakar
+ro.product.locale.language=fr
+ro.product.locale.region=SN
+ro.miui.region=SN
+ro.miui.mcc=9608
+ro.miui.mnc=9999
+ro.miui.cust_variant=sn

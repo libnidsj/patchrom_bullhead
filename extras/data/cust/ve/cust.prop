@@ -1,0 +1,7 @@
+persist.sys.timezone=America/Caracas
+ro.product.locale.language=es
+ro.product.locale.region=VE
+ro.miui.region=VE
+ro.miui.mcc=9734
+ro.miui.mnc=9999
+ro.miui.cust_variant=ve

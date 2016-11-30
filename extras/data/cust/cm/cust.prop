@@ -1,0 +1,7 @@
+persist.sys.timezone=Africa/Douala
+ro.product.locale.language=fr
+ro.product.locale.region=CM
+ro.miui.region=CM
+ro.miui.mcc=9624
+ro.miui.mnc=9999
+ro.miui.cust_variant=cm

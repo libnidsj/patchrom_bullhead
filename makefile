@@ -5,6 +5,8 @@
 ## The original zip file, MUST be specified by each product
 local-zip-file := stockrom.zip
 
+PORT_PRODUCT = bullhead_global
+
 # All vendor apks needed
 local-phone-apps := NfcNci PacProcessor CertInstaller KeyChain \
 	Stk qcrilmsgtunnel TimeService UserDictionaryProvider Bluetooth BluetoothMidiService
@@ -25,4 +27,5 @@ include $(PORT_BUILD)/porting.mk
 pre-zip-misc:
 	@echo copy files
 	cp -rf extras/system/* $(ZIP_DIR)/system/
+	cp -rf extras/data/* $(ZIP_DIR)/data/
 

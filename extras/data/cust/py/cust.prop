@@ -1,0 +1,7 @@
+persist.sys.timezone=America/Asuncion
+ro.product.locale.language=es
+ro.product.locale.region=PY
+ro.miui.region=PY
+ro.miui.mcc=9744
+ro.miui.mnc=9999
+ro.miui.cust_variant=py

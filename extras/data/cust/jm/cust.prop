@@ -1,0 +1,7 @@
+persist.sys.timezone=America/Jamaica
+ro.product.locale.language=en
+ro.product.locale.region=JM
+ro.miui.region=JM
+ro.miui.mcc=9338
+ro.miui.mnc=9999
+ro.miui.cust_variant=jm

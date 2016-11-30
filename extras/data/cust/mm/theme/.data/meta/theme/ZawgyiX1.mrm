@@ -1,0 +1,52 @@
+{
+  "localId": "ZawgyiX1",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "3a086aa27166dc5ca6961c74e970568e267ff0c3",
+  "platform": 3,
+  "size": 66292,
+  "updatedTime": 1445947670275,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Alpha"
+  },
+  "designers": {
+    "fallback": "Alpha"
+  },
+  "titles": {
+    "fallback": "ZawgyiX1"
+  },
+  "descriptions": {
+    "fallback": "ZawgyiX1 for the Burmese language"
+  },
+  "builtInThumbnails": {
+    "fallback":[
+        "preview_fonts_small_0.png"
+        ]
+  },
+  "builtInPreviews": {
+    "fallback":[
+        "preview_fonts_0.jpg"
+        ]
+  },
+  "thumbnails": [
+  ],
+  "previews": [
+  ],
+  "parentResources": [
+  ],
+  "subResources": [
+    {
+      "localId": "ZawgyiX1",
+      "resourceCode": "fonts",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+   ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null
+}

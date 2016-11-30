@@ -1,0 +1,7 @@
+persist.sys.timezone=Africa/Kigali
+ro.product.locale.language=fr
+ro.product.locale.region=RW
+ro.miui.region=RW
+ro.miui.mcc=9635
+ro.miui.mnc=9999
+ro.miui.cust_variant=rw
