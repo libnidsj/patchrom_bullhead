@@ -151,15 +151,6 @@ system/app/KoreanIME/KoreanIME.apk 0 0 644 selabel=u:object_r:system_file:s0 cap
 system/app/KoreanIME/oat 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/KoreanIME/oat/arm64 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/KoreanIME/oat/arm64/KoreanIME.odex 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/LatinImeGoogle 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/LatinImeGoogle/LatinImeGoogle.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/LatinImeGoogle/lib 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/LatinImeGoogle/lib/arm64 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/LatinImeGoogle/lib/arm64/libjni_keyboarddecoder.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/LatinImeGoogle/lib/arm64/libjni_latinimegoogle.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/LatinImeGoogle/oat 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/LatinImeGoogle/oat/arm64 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/LatinImeGoogle/oat/arm64/LatinImeGoogle.odex 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LiveWallpapersPicker 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LiveWallpapersPicker/LiveWallpapersPicker.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LiveWallpapersPicker/oat 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -2166,3 +2157,5 @@ system/bin/app_process 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
 system/bin/supolicy_wrapped 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
 system/bin/sush 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
 system/lib/libsupol.so 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
+system/priv-app/LatinIME 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/priv-app/LatinIME/LatinIME.apk 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
