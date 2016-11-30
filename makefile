@@ -13,7 +13,7 @@ local-phone-apps := NfcNci PacProcessor CertInstaller KeyChain \
 
 local-phone-priv-apps := Shell FusedLocation ProxyHandler ExternalStorageProvider \
 	SharedStorageBackup DMService ConnMO DiagMon DCMO InputDevices CellBroadcastReceiver \
-	BackupRestoreConfirmation ViPER4AndroidFX-2.4.0.1
+	BackupRestoreConfirmation 
 
 local-miui-modified-apps := InCallUI
 
