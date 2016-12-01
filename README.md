@@ -5,7 +5,7 @@ Downloads at http://forum.xda-developers.com/nexus-5x/development/unofficial-miu
 If you want to build miui yourself using this repository, setup your linux for android build marshmallow with JDK7 and follow these commands:
 
 
-
+- sudo su
 - mkdir MIUI
 - cd MIUI
 - repo init -u git://github.com/MiCode/patchrom.git -b marshmallow
@@ -15,6 +15,7 @@ If you want to build miui yourself using this repository, setup your linux for a
 - cd bullhead
 - make fullota
 - adb sideload out/fullota.zip
+- exit
 
 
 
