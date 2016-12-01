@@ -2149,13 +2149,6 @@ system/usr/srec/en-US/voice_actions_compiler.config 0 0 644 selabel=u:object_r:s
 system/usr/srec/en-US/wordlist.syms 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/dexdump 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-data/su.img 0 2000 6755 selabel=u:object_r:su_exec:s0 capabilities=0x0
-system/bin/su 0 2000 6755 selabel=u:object_r:su_exec:s0 capabilities=0x0
-system/bin/sukernel 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
-system/bin/daemonsu 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
-system/bin/app_process 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
-system/bin/supolicy_wrapped 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
-system/bin/sush 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
 system/lib/libsupol.so 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
 system/priv-app/LatinIME 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/LatinIME/LatinIME.apk 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
