@@ -28,8 +28,8 @@ pre-zip-misc:
 	@echo copy files
 	cp -rf extras/runme.sh $(ZIP_DIR)/
 	chmod 777 -R $(ZIP_DIR)/runme.sh
-	sed -i '$d' $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	sed -i '$d' $(ZIP_DIR)/META-INF/com/google/android/updater-script
+	echo "mount("ext4", "EMMC", "/dev/block/platform/soc.0/f9824900.sdhci/by-name/system", "/system", "");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
+	echo "mount("ext4", "EMMC", "/dev/block/platform/soc.0/f9824900.sdhci/by-name/userdata", "/data", "");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "set_perm_recursive(0, 0, 0755, 0755, "/system/addon.d");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "set_perm_recursive(0, 0, 0755, 0755, "/system/su.d");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "package_extract_file("runme.sh", "/tmp/runme.sh");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
