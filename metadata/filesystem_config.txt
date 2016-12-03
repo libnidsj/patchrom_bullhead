@@ -1775,7 +1775,11 @@ system/media/theme/default/com.speedsoftware.rootexplorer 0 0 644 selabel=u:obje
 system/media/theme/default/com.viber.voip 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/media/theme/default/com.vkontakte.android 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/media/theme/default/com.whatsapp 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/media/theme/default/icons 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/media/theme/default/keyguardmusicview 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/media/theme/default/org.telegram.messenger 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/media/theme/default/powermenu 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/media/theme/default/recentspanelmusiccontrol 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/As 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/As/As.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
