@@ -17,7 +17,7 @@ local-phone-priv-apps := Shell FusedLocation ProxyHandler ExternalStorageProvide
 
 local-miui-modified-apps := InCallUI
 
-local-miui-removed-apps := SogouInput FM MiuiSuperMarket Email GameCenter Updater Mipay BugReport
+local-miui-removed-apps := SogouInput FM MiuiSuperMarket Email GameCenter
 
 local-density := XXHDPI
 local-target-bit := 64
