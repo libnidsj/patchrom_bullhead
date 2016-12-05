@@ -26,16 +26,16 @@ include $(PORT_BUILD)/porting.mk
 
 pre-zip-misc:
 	@echo copy files
-	cp -rf extras/runme.sh $(ZIP_DIR)/
-	chmod 777 -R $(ZIP_DIR)/runme.sh
+	cp -rf extras/viper4audio.sh $(ZIP_DIR)/
+	chmod 777 -R $(ZIP_DIR)/viper4audio.sh
 	echo "mount("ext4", "EMMC", "/dev/block/platform/soc.0/f9824900.sdhci/by-name/system", "/system", "");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "mount("ext4", "EMMC", "/dev/block/platform/soc.0/f9824900.sdhci/by-name/userdata", "/data", "");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "set_perm_recursive(0, 0, 0755, 0755, "/system/addon.d");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "set_perm_recursive(0, 0, 0755, 0755, "/system/su.d");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "package_extract_file("runme.sh", "/tmp/runme.sh");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "set_perm(0, 0, 0777, "/tmp/runme.sh");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "run_program("/tmp/runme.sh");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "delete("/tmp/runme.sh");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
+	echo "run_program("/tmp/viper4audio.sh");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
+	echo "delete("/tmp/viper4audio.sh");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "unmount("/data");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	echo "unmount("/system");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	cp -rf extras/system/* $(ZIP_DIR)/system/
