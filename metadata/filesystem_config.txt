@@ -312,6 +312,8 @@ system/app/talkback/talkback.apk 0 0 644 selabel=u:object_r:system_file:s0 capab
 system/app/talkback/oat 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/talkback/oat/arm64 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/talkback/oat/arm64/talkback.odex 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/TouchAssistant 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/TouchAssistant/TouchAssistant.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/ATFWD-daemon 0 2000 755 selabel=u:object_r:atfwd_exec:s0 capabilities=0x0
 system/bin/acpi 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0

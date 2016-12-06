@@ -51,7 +51,7 @@
             <type name="image/vnd.wap.wbmp" />
         </filter>
     </item>
-    <item name="com.google.android.apps.plus/.phone.ConversationListActivity">
+    <item name="com.google.android.apps.photos/.home.HomeActivity">
         <filter>
             <action name="android.intent.action.MAIN" />
             <cat name="android.intent.category.APP_GALLERY" />
