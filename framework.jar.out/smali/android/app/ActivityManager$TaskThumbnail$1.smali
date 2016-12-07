@@ -50,17 +50,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Landroid/app/ActivityManager$TaskThumbnail;-><init>(Landroid/os/Parcel;Landroid/app/ActivityManager$TaskThumbnail;)V
+    invoke-direct {v0, p1, v1}, Landroid/app/ActivityManager$TaskThumbnail;-><init>(Landroid/os/Parcel;Landroid/app/ActivityManager$1;)V
 
     return-object v0
 .end method
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1, "source"    # Landroid/os/Parcel;
+    .param p1, "x0"    # Landroid/os/Parcel;
 
     .prologue
-    .line 1379
+    .line 1378
     invoke-virtual {p0, p1}, Landroid/app/ActivityManager$TaskThumbnail$1;->createFromParcel(Landroid/os/Parcel;)Landroid/app/ActivityManager$TaskThumbnail;
 
     move-result-object v0
@@ -81,10 +81,10 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1, "size"    # I
+    .param p1, "x0"    # I
 
     .prologue
-    .line 1382
+    .line 1378
     invoke-virtual {p0, p1}, Landroid/app/ActivityManager$TaskThumbnail$1;->newArray(I)[Landroid/app/ActivityManager$TaskThumbnail;
 
     move-result-object v0
