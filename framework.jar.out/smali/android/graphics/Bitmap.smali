@@ -303,10 +303,6 @@
 
     invoke-virtual {v1, v0}, Landroid/graphics/Bitmap$BitmapFinalizer;->setNativeAllocationByteCount(I)V
 
-    const/4 v1, 0x0
-
-    invoke-static {p0, v1}, Lmiui/util/DumpBitmapInfoUtils;->putBitmap(Landroid/graphics/Bitmap;Ljava/lang/CharSequence;)V
-
     .line 110
     return-void
 
