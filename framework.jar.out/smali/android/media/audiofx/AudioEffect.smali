@@ -242,17 +242,15 @@
 
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_LOUDNESS_ENHANCER:Ljava/util/UUID;
 
-    .line 133
+    .line 132
     const-string v0, "ec7178ec-e5e1-4432-a3f4-4657e6795210"
 
-    .line 132
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
 
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_NULL:Ljava/util/UUID;
 
-    .line 59
     return-void
 .end method
 
@@ -1917,7 +1915,7 @@
 
     .prologue
     .line 516
-    const-string/jumbo v0, "setEnabled()"
+    const-string v0, "setEnabled()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
@@ -2028,7 +2026,7 @@
 
     .prologue
     .line 539
-    const-string/jumbo v0, "setParameter()"
+    const-string v0, "setParameter()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
