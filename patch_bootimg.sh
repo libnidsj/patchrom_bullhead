@@ -15,6 +15,7 @@ mv $TARGET_BOOT_DIR/ramdisk/init $TARGET_BOOT_DIR/ramdisk/init_vendor
 fi
 cp -f $PREBUILT_BOOT_DIR/$TARGET_BIT/init $TARGET_BOOT_DIR/ramdisk/init
 $MKBOOTFS $TARGET_BOOT_DIR/ramdisk | gzip > $TARGET_BOOT_DIR/ramdisk.gz
+cp -rf extras/boot/ramdisk/init.bullhead.rc $TARGET_BOOT_DIR/ramdisk/
 
 
 OLDCMDLINE=$(cat $TARGET_BOOT_DIR/boot.img-cmdline)
@@ -36,5 +37,3 @@ RAMDISKOFFSET=$(cat $TARGET_BOOT_DIR/boot.img-ramdisk_offset)
 TAGSOFFSET=$(cat $TARGET_BOOT_DIR/boot.img-tags_offset)
 
 $MKBOOTIMG --kernel $TARGET_BOOT_DIR/boot.img-zImage --ramdisk $TARGET_BOOT_DIR/ramdisk.gz --dt $TARGET_BOOT_DIR/boot.img-dt --base "$BASEADDR" --pagesize "$PAGESIZE" --ramdisk_offset "$RAMDISKOFFSET" --tags_offset "$TAGSOFFSET" --cmdline "$NEWCMDLINE" -o $BOOTIMG
-
-cp -rf extras/boot/ramdisk/init.bullhead.rc $TARGET_BOOT_DIR/ramdisk/
