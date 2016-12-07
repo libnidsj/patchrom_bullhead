@@ -14,8 +14,8 @@ if [ ! -f $TARGET_BOOT_DIR/ramdisk/init_vendor ];then
 mv $TARGET_BOOT_DIR/ramdisk/init $TARGET_BOOT_DIR/ramdisk/init_vendor
 fi
 cp -f $PREBUILT_BOOT_DIR/$TARGET_BIT/init $TARGET_BOOT_DIR/ramdisk/init
-$MKBOOTFS $TARGET_BOOT_DIR/ramdisk | gzip > $TARGET_BOOT_DIR/ramdisk.gz
 cp -rf extras/boot/ramdisk/init.bullhead.rc $TARGET_BOOT_DIR/ramdisk/
+$MKBOOTFS $TARGET_BOOT_DIR/ramdisk | gzip > $TARGET_BOOT_DIR/ramdisk.gz
 
 
 OLDCMDLINE=$(cat $TARGET_BOOT_DIR/boot.img-cmdline)
