@@ -145,7 +145,7 @@
 
     .prologue
     .line 61
-    const-string v0, "audioeffect_jni"
+    const-string/jumbo v0, "audioeffect_jni"
 
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
@@ -153,7 +153,7 @@
     invoke-static {}, Landroid/media/audiofx/AudioEffect;->native_init()V
 
     .line 79
-    const-string v0, "c2e5d5f0-94bd-4763-9cac-4e234d06839e"
+    const-string/jumbo v0, "c2e5d5f0-94bd-4763-9cac-4e234d06839e"
 
     .line 78
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
@@ -163,7 +163,7 @@
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_ENV_REVERB:Ljava/util/UUID;
 
     .line 84
-    const-string v0, "47382d60-ddd8-11db-bf3a-0002a5d5c51b"
+    const-string/jumbo v0, "47382d60-ddd8-11db-bf3a-0002a5d5c51b"
 
     .line 83
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
@@ -173,7 +173,7 @@
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_PRESET_REVERB:Ljava/util/UUID;
 
     .line 89
-    const-string v0, "0bed4300-ddd6-11db-8f34-0002a5d5c51b"
+    const-string/jumbo v0, "0bed4300-ddd6-11db-8f34-0002a5d5c51b"
 
     .line 88
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
@@ -183,7 +183,7 @@
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_EQUALIZER:Ljava/util/UUID;
 
     .line 94
-    const-string v0, "0634f220-ddd4-11db-a0fc-0002a5d5c51b"
+    const-string/jumbo v0, "0634f220-ddd4-11db-a0fc-0002a5d5c51b"
 
     .line 93
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
@@ -193,7 +193,7 @@
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_BASS_BOOST:Ljava/util/UUID;
 
     .line 99
-    const-string v0, "37cc2c00-dddd-11db-8577-0002a5d5c51b"
+    const-string/jumbo v0, "37cc2c00-dddd-11db-8577-0002a5d5c51b"
 
     .line 98
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
@@ -203,7 +203,7 @@
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_VIRTUALIZER:Ljava/util/UUID;
 
     .line 108
-    const-string v0, "0a8abfe0-654c-11e0-ba26-0002a5d5c51b"
+    const-string/jumbo v0, "0a8abfe0-654c-11e0-ba26-0002a5d5c51b"
 
     .line 107
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
@@ -213,7 +213,7 @@
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_AGC:Ljava/util/UUID;
 
     .line 114
-    const-string v0, "7b491460-8d4d-11e0-bd61-0002a5d5c51b"
+    const-string/jumbo v0, "7b491460-8d4d-11e0-bd61-0002a5d5c51b"
 
     .line 113
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
@@ -223,7 +223,7 @@
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_AEC:Ljava/util/UUID;
 
     .line 120
-    const-string v0, "58b4b260-8e06-11e0-aa8e-0002a5d5c51b"
+    const-string/jumbo v0, "58b4b260-8e06-11e0-aa8e-0002a5d5c51b"
 
     .line 119
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
@@ -233,7 +233,7 @@
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_NS:Ljava/util/UUID;
 
     .line 126
-    const-string v0, "fe3199be-aed0-413f-87bb-11260eb63cf1"
+    const-string/jumbo v0, "fe3199be-aed0-413f-87bb-11260eb63cf1"
 
     .line 125
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
@@ -242,15 +242,17 @@
 
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_LOUDNESS_ENHANCER:Ljava/util/UUID;
 
-    .line 132
-    const-string v0, "ec7178ec-e5e1-4432-a3f4-4657e6795210"
+    .line 133
+    const-string/jumbo v0, "ec7178ec-e5e1-4432-a3f4-4657e6795210"
 
+    .line 132
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
 
     sput-object v0, Landroid/media/audiofx/AudioEffect;->EFFECT_TYPE_NULL:Ljava/util/UUID;
 
+    .line 59
     return-void
 .end method
 
@@ -354,13 +356,13 @@
     if-eq v9, v0, :cond_0
 
     .line 401
-    const-string v0, "AudioEffect-JAVA"
+    const-string/jumbo v0, "AudioEffect-JAVA"
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "Error code "
+    const-string/jumbo v2, "Error code "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -371,7 +373,7 @@
     move-result-object v1
 
     .line 402
-    const-string v2, " when initializing AudioEffect."
+    const-string/jumbo v2, " when initializing AudioEffect."
 
     .line 401
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -395,7 +397,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "Cannot initialize effect engine for type: "
+    const-string/jumbo v2, "Cannot initialize effect engine for type: "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -406,7 +408,7 @@
     move-result-object v1
 
     .line 413
-    const-string v2, " Error: "
+    const-string/jumbo v2, " Error: "
 
     .line 412
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -434,7 +436,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "Effect type: "
+    const-string/jumbo v2, "Effect type: "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -445,7 +447,7 @@
     move-result-object v1
 
     .line 406
-    const-string v2, " not supported."
+    const-string/jumbo v2, " not supported."
 
     .line 405
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -465,7 +467,7 @@
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     .line 409
-    const-string v1, "Effect library not loaded"
+    const-string/jumbo v1, "Effect library not loaded"
 
     .line 408
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
@@ -1017,7 +1019,7 @@
     move-result-object v2
 
     .line 1258
-    const-string v3, " called on uninitialized AudioEffect."
+    const-string/jumbo v3, " called on uninitialized AudioEffect."
 
     .line 1257
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1067,7 +1069,7 @@
     .line 1276
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v1, "AudioEffect: set/get parameter error"
+    const-string/jumbo v1, "AudioEffect: set/get parameter error"
 
     invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -1078,7 +1080,7 @@
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     .line 1271
-    const-string v1, "AudioEffect: bad parameter value"
+    const-string/jumbo v1, "AudioEffect: bad parameter value"
 
     .line 1270
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
@@ -1090,7 +1092,7 @@
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     .line 1274
-    const-string v1, "AudioEffect: invalid parameter operation"
+    const-string/jumbo v1, "AudioEffect: invalid parameter operation"
 
     .line 1273
     invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
@@ -1124,7 +1126,7 @@
 
     .prologue
     .line 848
-    const-string v0, "command()"
+    const-string/jumbo v0, "command()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
@@ -1169,7 +1171,7 @@
 
     .prologue
     .line 447
-    const-string v0, "getDescriptor()"
+    const-string/jumbo v0, "getDescriptor()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
@@ -1189,7 +1191,7 @@
 
     .prologue
     .line 876
-    const-string v0, "getEnabled()"
+    const-string/jumbo v0, "getEnabled()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
@@ -1211,7 +1213,7 @@
 
     .prologue
     .line 865
-    const-string v0, "getId()"
+    const-string/jumbo v0, "getId()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
@@ -1436,7 +1438,7 @@
 
     .prologue
     .line 670
-    const-string v0, "getParameter()"
+    const-string/jumbo v0, "getParameter()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
@@ -1776,7 +1778,7 @@
 
     .prologue
     .line 888
-    const-string v0, "hasControl()"
+    const-string/jumbo v0, "hasControl()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
