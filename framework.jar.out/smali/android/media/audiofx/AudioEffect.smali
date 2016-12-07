@@ -1915,7 +1915,7 @@
 
     .prologue
     .line 516
-    const-string v0, "setEnabled()"
+    const-string/jumbo v0, "setEnabled()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
@@ -2026,7 +2026,7 @@
 
     .prologue
     .line 539
-    const-string v0, "setParameter()"
+    const-string/jumbo v0, "setParameter()"
 
     invoke-virtual {p0, v0}, Landroid/media/audiofx/AudioEffect;->checkState(Ljava/lang/String;)V
 
