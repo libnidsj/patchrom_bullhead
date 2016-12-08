@@ -16,6 +16,12 @@
     name = "TaskThumbnail"
 .end annotation
 
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/app/ActivityManager$TaskThumbnail$1;
+    }
+.end annotation
+
 
 # static fields
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
@@ -48,6 +54,7 @@
 
     sput-object v0, Landroid/app/ActivityManager$TaskThumbnail;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 1336
     return-void
 .end method
 
@@ -58,7 +65,6 @@
     .line 1340
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1341
     return-void
 .end method
 
@@ -73,17 +79,15 @@
     .line 1388
     invoke-virtual {p0, p1}, Landroid/app/ActivityManager$TaskThumbnail;->readFromParcel(Landroid/os/Parcel;)V
 
-    .line 1389
+    .line 1387
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/os/Parcel;Landroid/app/ActivityManager$1;)V
+.method synthetic constructor <init>(Landroid/os/Parcel;Landroid/app/ActivityManager$TaskThumbnail;)V
     .locals 0
-    .param p1, "x0"    # Landroid/os/Parcel;
-    .param p2, "x1"    # Landroid/app/ActivityManager$1;
+    .param p1, "source"    # Landroid/os/Parcel;
 
     .prologue
-    .line 1336
     invoke-direct {p0, p1}, Landroid/app/ActivityManager$TaskThumbnail;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -107,14 +111,13 @@
 
     move-result v0
 
-    .line 1347
-    :goto_0
     return v0
 
+    .line 1347
     :cond_0
     const/4 v0, 0x0
 
-    goto :goto_0
+    return v0
 .end method
 
 .method public readFromParcel(Landroid/os/Parcel;)V
@@ -161,7 +164,7 @@
 
     iput-object v0, p0, Landroid/app/ActivityManager$TaskThumbnail;->thumbnailFileDescriptor:Landroid/os/ParcelFileDescriptor;
 
-    .line 1376
+    .line 1365
     :goto_1
     return-void
 
@@ -215,7 +218,7 @@
 
     invoke-virtual {v0, p1, p2}, Landroid/os/ParcelFileDescriptor;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 1363
+    .line 1350
     :goto_1
     return-void
 
