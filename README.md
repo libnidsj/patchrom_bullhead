@@ -10,7 +10,7 @@ If you want to build miui yourself using this repository, setup your linux for a
 - cd MIUI
 - repo init -u git://github.com/MiCode/patchrom.git -b marshmallow
 - repo sync
-- git clone https://github.com/libnijunior/patchrom_bullhead -b marshmallow bullhead
+- git clone https://github.com/libnijunior/patchrom_bullhead -b mtc20k bullhead
 - . build/envsetup.sh
 - cd bullhead
 - make fullota
